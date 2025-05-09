@@ -1,6 +1,7 @@
 /* style.css */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+    font-weight: 300;
     color: #111;
     background: #fff;
     max-width: 600px;
@@ -25,6 +26,7 @@ body {
   
   nav a {
     margin-right: 1rem;
+    letter-spacing: 0,5px;
     color: #007acc;
     text-decoration: none;
   }
@@ -38,6 +40,14 @@ body {
   }
   
   ul {
-    padding-left: 1.2em;
+    list-style-position: outside;
+    padding-left: 1.5em;
   }
   
+  ul li {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0.3em 0
+  }
