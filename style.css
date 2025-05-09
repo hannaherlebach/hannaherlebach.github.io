@@ -77,7 +77,7 @@ body {
   
   /* Dark mode overrides */
   body.dark-mode {
-    background: #111;
+    background: #1a203f;
     color: #eee;
   }
   
