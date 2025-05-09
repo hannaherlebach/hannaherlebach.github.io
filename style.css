@@ -28,7 +28,7 @@ body {
   
   nav a {
     margin-right: 1rem;
-    letter-spacing: 0,5px;
+    letter-spacing: 0.5px;
     color: #007acc;
     text-decoration: none;
   }
@@ -55,13 +55,22 @@ body {
   }
 
   /* Toggle button styling */
-#theme-toggle {
+  #theme-toggle {
     background: none;
     border: none;
-    font-size: 1rem;
-    cursor: pointer;
+    padding: 0;
     margin-left: 1rem;
+    cursor: pointer;
+    color: #0050aa; /* dark blue moon for light mode */
   }
+  
+  body.dark-mode #theme-toggle {
+    color: #ffffff; /* white moon in dark mode */
+  }
+  
+  #moon-icon {
+    display: block;
+  }  
   
   /* Dark mode overrides */
   body.dark-mode {

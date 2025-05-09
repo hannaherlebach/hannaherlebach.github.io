@@ -11,11 +11,16 @@
     <h1>Hannah Erlebach</h1>
     <p>Incoming DPhil in Machine Learning @ Oxford</p>
     <p>London · UK</p>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
     <nav>
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="cv.pdf">CV</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">
+        <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M21 12.79A9 9 0 0111.21 3a7 7 0 100 14 9 9 0 009.79-4.21z"/>
+        </svg>
+      </button>
+      
     </nav>
 
     <section id="about">
@@ -37,17 +42,15 @@
     const toggle = document.getElementById('theme-toggle');
     const body = document.body;
   
-    // Load preference on page load
+    // On load: check saved preference
     if (localStorage.getItem('theme') === 'dark') {
       body.classList.add('dark-mode');
-      toggle.textContent = '🌙';
     }
   
     toggle.addEventListener('click', () => {
       const isDark = body.classList.toggle('dark-mode');
-      toggle.textContent = isDark ? '🌙' : '☀️';
       localStorage.setItem('theme', isDark ? 'dark' : 'light');
     });
-  </script>
+  </script>  
 </body>
 </html>
