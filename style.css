@@ -69,7 +69,10 @@ body {
   }
   
   #moon-icon {
-    display: block;
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    vertical-align: middle;
   }  
   
   /* Dark mode overrides */
