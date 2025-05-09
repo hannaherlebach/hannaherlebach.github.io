@@ -53,3 +53,23 @@ body {
   p {
     margin: 0.3em 0
   }
+
+  /* Toggle button styling */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+  
+  /* Dark mode overrides */
+  body.dark-mode {
+    background: #111;
+    color: #eee;
+  }
+  
+  body.dark-mode a,
+  body.dark-mode nav a {
+    color: #66aaff;
+  }
