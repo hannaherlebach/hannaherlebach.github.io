@@ -10,10 +10,16 @@ body {
   line-height: 1.7;
 }
 
+/* Headings use Playfair Display */
+h1, h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #111;
+}
+
 h1 {
   font-size: 2.5rem;
   margin-bottom: 0.2em;
-  font-weight: 600;
 }
 
 h2 {
@@ -88,10 +94,10 @@ body.dark-mode nav a {
 }
 
 .profile-pic {
-  width: 80px;            /* adjust size */
-  height: 80px;           /* keep square shape */
-  border-radius: 50%;     /* makes it circular */
-  object-fit: cover;      /* crops image nicely */
-  vertical-align: middle; /* aligns with text */
-  margin-right: 10px;     /* space before your name */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 10px;
 }
