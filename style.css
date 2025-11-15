@@ -85,3 +85,12 @@ body {
   body.dark-mode nav a {
     color: #66aaff;
   }
+
+.profile-pic {
+  width: 80px;            /* adjust size */
+  height: 80px;           /* keep square shape */
+  border-radius: 50%;     /* makes it circular */
+  object-fit: cover;      /* crops image nicely */
+  vertical-align: middle; /* aligns with text */
+  margin-right: 10px;     /* space before your name */
+}
