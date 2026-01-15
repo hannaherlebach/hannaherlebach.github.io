@@ -1,34 +1,44 @@
 /* style.css */
 body {
-  font-family: "Lora", serif;
+  font-family: "Space Mono", monospace;
   font-weight: 400;
+  font-size: 14px;
   color: #111;
   background: #fff;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin: 0;
+  padding: 3rem 2rem;
 }
 
-/* Headings use Playfair Display */
+.page-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+main {
+  max-width: 520px;
+}
+
 h1, h2 {
-  font-family: "EB Garamond SC", "Playfair Display", serif;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
-  font-variant: small-caps; /* enables small caps */
-  letter-spacing: 0.05em;   /* adds subtle spacing for readability */
-  text-transform: none;     /* ensures you’re not forcing uppercase */
+  letter-spacing: 0.02em;
 }
 
 h1 {
-  font-size: 2.2rem;        
-  margin-bottom: 0.3em;
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  margin-top: 1.4rem;
-  margin-bottom: 0.6rem;
-  font-weight: 600;
-  font-variant: small-caps; 
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
 }
 
 nav {
@@ -37,8 +47,8 @@ nav {
 }
 
 nav a {
-  margin-right: 1rem;
-  letter-spacing: 0.5px;
+  margin-right: 1.2rem;
+  letter-spacing: 0.05em;
   color: #007acc;
   text-decoration: none;
 }
@@ -51,17 +61,21 @@ a {
   color: #007acc;
 }
 
+section {
+  margin-bottom: 1.8rem;
+}
+
 ul {
   list-style-position: outside;
   padding-left: 1.5em;
 }
 
 ul li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 p {
-  margin: 0.3em 0;
+  margin: 0.6em 0;
 }
 
 /* Toggle button styling */
@@ -97,10 +111,22 @@ body.dark-mode nav a {
 }
 
 .profile-pic {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  vertical-align: middle;
-  margin-right: 10px;
+  width: 150px;
+  max-width: 150px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .page-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .profile-pic {
+    width: 100px;
+    height: auto;
+  }
 }
