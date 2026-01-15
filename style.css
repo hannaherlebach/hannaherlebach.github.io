@@ -61,6 +61,14 @@ a {
   color: #007acc;
 }
 
+.icon-link {
+  margin-left: 0.5rem;
+}
+
+.icon-link svg {
+  vertical-align: -2px;
+}
+
 section {
   margin-bottom: 1.8rem;
 }
@@ -80,23 +88,37 @@ p {
 
 /* Toggle button styling */
 #theme-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
   background: none;
   border: none;
-  padding: 0;
-  margin-left: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
-  color: #0050aa; /* dark blue moon for light mode */
+  color: #111;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+#theme-toggle:hover {
+  opacity: 1;
 }
 
 body.dark-mode #theme-toggle {
-  color: #ffffff; /* white moon in dark mode */
+  color: #eee;
 }
 
-#moon-icon {
-  display: inline-block;
-  width: 24px;
-  height: 28px;
-  vertical-align: middle;
+/* Show sun in light mode, moon in dark mode */
+.icon-moon {
+  display: none;
+}
+
+body.dark-mode .icon-sun {
+  display: none;
+}
+
+body.dark-mode .icon-moon {
+  display: inline;
 }
 
 /* Dark mode overrides */
