@@ -1,0 +1,16 @@
+---
+layout: default
+title: Writing
+---
+<div class="blog-wrapper">
+  <p class="post-back"><a href="/">← home</a></p>
+  <h1>Writing</h1>
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

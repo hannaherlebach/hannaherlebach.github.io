@@ -1,0 +1,10 @@
+title: Hannah Erlebach
+url: "https://hannaherlebach.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+highlighter: rouge
+permalink: /writing/:title/
+exclude:
+  - "images/README.md"
