@@ -132,13 +132,27 @@ body.dark-mode nav a {
   color: #66aaff;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.sidebar nav {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
 .profile-pic {
   width: 150px;
   max-width: 150px;
   height: auto;
   object-fit: contain;
-  flex-shrink: 0;
-  margin-top: 0.5rem;
 }
 
 /* Blog index */
@@ -221,6 +235,5 @@ body.dark-mode .post-list time {
 
   .profile-pic {
     width: 100px;
-    height: auto;
   }
 }
