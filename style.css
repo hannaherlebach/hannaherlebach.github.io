@@ -143,9 +143,12 @@ body.dark-mode nav a {
 
 .sidebar nav {
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+}
+
+.sidebar nav a {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 0.3rem;
 }
 
 .profile-pic {
