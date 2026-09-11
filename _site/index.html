@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hannah Erlebach</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <button id="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+  </button>
+  <div class="page-wrapper">
+  <div class="sidebar">
+    <img src="/images/me_garden.JPG" alt="" class="profile-pic">
+    <nav>
+      <a href="/writing/">writing</a>
+      <a href="https://scholar.google.com/citations?user=2Brif-UAAAAJ&hl=en">scholar</a>
+    </nav>
+  </div>
+  <main>
+    <h1>Hannah Erlebach</h1>
+    <p>DPhil in Machine Learning @ BOLD (formerly FLAIR), University of Oxford</p>
+    <p>Oxford · UK · [first].[last]@gmail.com </p>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a first-year DPhil student in machine learning supervised by Jakob Foerster and funded by the <a href="https://www.cooperativeai.com/">Cooperative AI</a> PhD fellowship.
+
+        <br><br>
+        I did my masters in machine learning at University College London, where my thesis was supervised by Tim Rocktaschel, and my undergraduate in maths at Cambridge.
+
+        <br><br>
+        I'm currently thinking about multi-agent learning, communication and theory of mind, bounded rationality and embedded agency, complexity, and active inference - with a view to developing a formal framework for communication and mutual understanding between diverse minds.
+    </p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+        <p>Research from before my PhD.</p>
+      <ul>
+        <li><strong>DUA: Discovering Universal Attacks Using Foundation Models</strong>. <i>Master's thesis for UCL MSc in Machine Learning, 2025</i>.</li>
+        <li><strong>Guiding Evolution of Artificial Life Using Vision-Language Models</strong>. Nikhil Baid, <strong>Hannah Erlebach</strong>, Paul Hellegouarch and Frederico Wieser. Published in <i>Artificial Life Conference 2025.</i> [<a href="https://arxiv.org/abs/2509.22447">arXiv</a>]</li>
+        <li><strong>Mitigating Goal Misgeneralisation via Minimax Regret</strong>. Karim Abdel Sadek, Matthew Farrugia-Roberts, Usman Anwar, <strong>Hannah Erlebach</strong>, Christian Schroeder de Witt, David Krueger and Michael Dennis. Published in <i>Reinforcement Learning Conference 2025.</i> [<a href="https://arxiv.org/abs/2507.03068">arXiv</a>]</li>
+        <li><strong>RACCOON: Regret-based Adaptive Curricula for Cooperation</strong>. <strong>Hannah Erlebach</strong> and Jonathan Cook. Published in <i>CoCoMARL workshop at Reinforcement Learning Conference 2024.</i> </li>
+        <li><strong>Welfare Diplomacy: Benchmarking Language Model Cooperation</strong>. Gabriel Mukobi, <strong>Hannah Erlebach</strong>, Niklas Lauffer, Lewis Hammond, Alan Chan and Jesse Clifton. Published in <i>SoLaR workshop at NeurIPS 2023.</i> [<a href="https://arxiv.org/abs/2310.08901">arXiv</a>]</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const body = document.body;
+    if (localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+    }
+    toggle.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>
